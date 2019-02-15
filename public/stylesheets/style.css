@@ -6,3 +6,20 @@ body {
 a {
   color: #00B7FF;
 }
+
+.cardWidth{
+  width: 18em;
+}
+
+.bg{
+  background-image: url(/images/mern.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg h1{
+  color: white;
+}
+.bg > p{
+  color:white;
+}

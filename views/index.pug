@@ -1,13 +1,16 @@
 extends layout
 
-mixin rubricCard(rubric) 
- .card                   
-  .card-body #{rubric} 
-
 block content
- .container
+ .container.bg
   h1= title
-  p Welcome to #{title}
-   
-  each rubric in rubrics
-   +rubricCard(rubric)
+  p Welcome to my Portfolio
+
+  .card.cardWidth
+   img(src='/images/profile.png')
+   .card-img-top
+   .card-body
+    h5.card-title #{myTitle}
+    p.card-text #{myQuality}
+
+      a(href="/contact")
+       button.btn.btn-primary HIRE ME
