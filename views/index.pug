@@ -1,0 +1,13 @@
+extends layout
+
+mixin rubricCard(rubric) 
+ .card                   
+  .card-body #{rubric} 
+
+block content
+ .container
+  h1= title
+  p Welcome to #{title}
+   
+  each rubric in rubrics
+   +rubricCard(rubric)
