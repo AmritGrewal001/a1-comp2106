@@ -24,7 +24,7 @@ router.get('/about', function(req, res, next) {
         myTitle: 'Full Stack Developer',
         myQuality: 'I am full stack Developer, I have a good hand on the most advanced languages out there. I use MERN stack for most of my projects.'
     };
-  res.render('index', params);
+  res.render('about', params);
 });
 
 
@@ -38,12 +38,12 @@ router.get('/work', function(req, res, next) {
         myTitle: 'Full Stack Developer',
         myQuality: 'I am full stack Developer, I have a good hand on the most advanced languages out there. I use MERN stack for most of my projects.'
     };
-  res.render('index', params);
+  res.render('work', params);
 });
 
 
 /* GET SERVICES page. */
-router.get('/services', function(req, res, next) {
+router.get('/service', function(req, res, next) {
     const qualities = ['Full Stack Developer', '55% DESIGNER', '45% CODER'];
     const params = {
         title: 'Hi, I am Amritpal Singh Grewal',
@@ -52,7 +52,7 @@ router.get('/services', function(req, res, next) {
         myTitle: 'Full Stack Developer',
         myQuality: 'I am full stack Developer, I have a good hand on the most advanced languages out there. I use MERN stack for most of my projects.'
     };
-  res.render('index', params);
+  res.render('service', params);
 });
 
 
@@ -66,6 +66,6 @@ router.get('/contact', function(req, res, next) {
         myTitle: 'Full Stack Developer',
         myQuality: 'I am full stack Developer, I have a good hand on the most advanced languages out there. I use MERN stack for most of my projects.'
     };
-  res.render('index', params);
+  res.render('contact', params);
 });
 module.exports = router;
