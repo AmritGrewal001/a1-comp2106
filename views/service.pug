@@ -4,8 +4,28 @@
 //- Description: This file code display the service page on the frontend of the site, in this file I am telling about the services I offer
 
 extends layout
-
 block content
- .container
+
+
+ .container.bg
+  nav.navbar.navbar-light
+  a.navbar-brand(href="/") Home
+  a.navbar-brand(href="/about") About Me
+  a.navbar-brand(href="/work") My Work
+  a.navbar-brand(href="/service") Services
+  a.navbar-brand(href="/contact") Contact Me
+  nav.navbar.navbar-light.bg-light
+  br
+  
   h1= title
   p Welcome to #{what}
+  
+  
+  ul.list-group
+  li.list-group-item Website Design
+  li.list-group-item Website Development 
+  li.list-group-item SEO
+  li.list-group-item Google Ads
+  li.list-group-item Graphic Designing
+  br
+

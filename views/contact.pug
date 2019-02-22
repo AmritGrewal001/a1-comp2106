@@ -5,9 +5,58 @@
 //- Description: This file code display the contact page on the frontend of the site, in this file I display my contact info and ways to connect with me
 
 
-
 extends layout
 block content
- .container
+
+
+ .container.bg
+  nav.navbar.navbar-light
+  a.navbar-brand(href="/") Home
+  a.navbar-brand(href="/about") About Me
+  a.navbar-brand(href="/work") My Work
+  a.navbar-brand(href="/service") Services
+  a.navbar-brand(href="/contact") Contact Me
+  nav.navbar.navbar-light.bg-light
+  br
+  
   h1= title
   p Welcome to #{what}
+
+  .px-lg-5
+  .row.mx-lg-n5
+    .col.py-3.px-lg-5.border.bg-light 
+      .card.text-center
+      .card-header
+        | Contact us
+      .card-body
+        h5.card-title Have a project in mind?
+        p.card-text Interested in finding out how I can help your organisation make the most of the internet? Then get in touch! 
+      .card-footer.text-muted
+        | 2 days ago
+
+    .col.py-3.px-lg-5.border.bg-light Fill out this form to get in touch with us!
+
+
+        form
+          .form-row
+            .form-group.col-md-6
+              label(for='inputEmail4') Email
+              input#inputEmail4.form-control(type='email' placeholder='Email')
+            .form-group.col-md-6
+              label(for='inputName') Name
+              input#inputName.form-control(type='text')
+          .form-group
+              label(for='exampleFormControlTextarea1') Message
+              textarea#exampleFormControlTextarea1.form-control(rows='3')
+
+          .form-row
+            .form-group.col-md-6
+              label(for='inputCity') City
+              input#inputCity.form-control(type='text')
+            .form-group.col-md-4
+              label(for='inputState') State
+              select#inputState.form-control
+                option(selected='') Choose...
+                option ...
+
+          button.btn.btn-primary(type='submit') Send 

@@ -6,8 +6,40 @@
 
 
 extends layout
-
 block content
- .container
+
+
+ .container.bg
+  nav.navbar.navbar-light
+  a.navbar-brand(href="/") Home
+  a.navbar-brand(href="/about") About Me
+  a.navbar-brand(href="/work") My Work
+  a.navbar-brand(href="/service") Services
+  a.navbar-brand(href="/contact") Contact Me
+  nav.navbar.navbar-light.bg-light
+  br
+  
   h1= title
   p Welcome to #{what}
+  
+      .place1.card
+       img(src='/images/cd.png')
+       .card-img-top
+       .card-body
+        h5.card-title CIIS website
+        p.card-text My 1st Responsive project college Website(2015)
+          br
+          a(href="/contact")
+           button.btn.btn-primary HIRE ME
+            br 
+           
+      .place1.card
+       img(src='/images/three.png')
+       .card-img-top
+       .card-body
+        h5.card-title Academia site
+        p.card-text Academia site design work(2016)
+          br
+          a(href="/contact")
+           button.btn.btn-primary HIRE ME
+  br

@@ -7,11 +7,25 @@
 
 extends layout
 
+
 block content
+
+
+  
  .container.bg
+  nav.navbar.navbar-light
+  a.navbar-brand(href="/index") Home
+  a.navbar-brand(href="/about") About Me
+  a.navbar-brand(href="/work") My Work
+  a.navbar-brand(href="/service") Services
+  a.navbar-brand(href="/contact") Contact Me
+  nav.navbar.navbar-light.bg-light
+  br
+
   h1= title
   p Welcome to my Portfolio
 
+ 
   .card.cardWidth
    img(src='/images/profile.png')
    .card-img-top
@@ -21,3 +35,5 @@ block content
 
       a(href="/contact")
        button.btn.btn-primary HIRE ME
+       
+   

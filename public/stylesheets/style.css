@@ -33,3 +33,7 @@ a {
 .bg > p{
   color:white;
 }
+
+place1{
+    float: left;
+}

@@ -6,6 +6,28 @@
 
 extends layout
 block content
- .container
+
+
+ .container.bg
+  nav.navbar.navbar-light
+  a.navbar-brand(href="/") Home
+  a.navbar-brand(href="/about") About Me
+  a.navbar-brand(href="/work") My Work
+  a.navbar-brand(href="/service") Services
+  a.navbar-brand(href="/contact") Contact Me
+  nav.navbar.navbar-light.bg-light
+  br
+  
   h1= title
   p Welcome to #{what}
+           
+        .card.text-center
+          .card-header
+            | :)
+          .card-body
+            h5.card-title #{myTitle}
+            p.card-text #{myQuality}
+            a.btn.btn-primary(href='/contact') HIRE ME
+          .card-footer.text-muted
+            | &copy;amrit | 2019
+  br
