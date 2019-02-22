@@ -27,7 +27,7 @@ router.get('/', function(req, res, next) {
 router.get('/about', function(req, res, next) {
     const qualities = ['Full Stack Developer', '55% DESIGNER', '45% CODER'];
     const params = {
-        title: 'Hi, I am Amritpal Singh Grewal',
+        title: 'About me',
         qualities,
         what: 'game',
         myTitle: 'Full Stack Developer',
@@ -41,7 +41,7 @@ router.get('/about', function(req, res, next) {
 router.get('/work', function(req, res, next) {
     const qualities = ['Full Stack Developer', '55% DESIGNER', '45% CODER'];
     const params = {
-        title: 'Hi, I am Amritpal Singh Grewal',
+        title: 'My Work',
         qualities,
         what: 'game',
         myTitle: 'Full Stack Developer',
@@ -55,7 +55,7 @@ router.get('/work', function(req, res, next) {
 router.get('/service', function(req, res, next) {
     const qualities = ['Full Stack Developer', '55% DESIGNER', '45% CODER'];
     const params = {
-        title: 'Hi, I am Amritpal Singh Grewal',
+        title: 'Services',
         qualities,
         what: 'game',
         myTitle: 'Full Stack Developer',
@@ -69,7 +69,7 @@ router.get('/service', function(req, res, next) {
 router.get('/contact', function(req, res, next) {
     const qualities = ['Full Stack Developer', '55% DESIGNER', '45% CODER'];
     const params = {
-        title: 'Hi, I am Amritpal Singh Grewal',
+        title: 'Contact',
         qualities,
         what: 'game',
         myTitle: 'Full Stack Developer',
